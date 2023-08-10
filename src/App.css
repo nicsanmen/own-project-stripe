@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply text-lg
+}
+
+.projects img {
+    width: 100%;
+}
+
+/* color */
+.bg-primary {
+    /* background: #0F172A; */
+    background: #a7ca90;
+}
+
+.bg-secondery {
+    /* background: #1E293B; */
+    background: #0c3235;
+}
+
+/* Botones */
+.bg-accent {
+    background: #00025d;
+}
+
+/* Texto botones */
+.text-accent {
+    color: #ffaf35;
+}
+
+.bt-accent {
+    color: #0c3235;
+}
+
+.bg-code {
+    --tw-bg-opacity: 1;
+    background-color: rgb(12 50 53 / var(--tw-bg-opacity));
+}
+
+.bg-live {
+    --tw-bg-opacity: 1;
+    background-color: rgb(69 36 16 / var(--tw-bg-opacity));
+}
+
+.text-secondery {
+    color: #0c3235;
+}
+
+nav li a {
+    @apply px-4 py-5 text-lg;
+}
+
+nav li a:hover {
+    color: #ffaf35;
+}
+
+.mobile-nav {
+    @apply block md:hidden fixed top-14 py-2 w-full h-full bg-gray-900 duration-500;
+}
+
+.border-primary {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 175 53 / var(--tw-border-opacity));
+}
+
+.border-secondery {
+    --tw-border-opacity: 1;
+    border-color: rgb(12 50 53 / var(--tw-border-opacity));
+}
+
+@font-face {
+    font-family: "Gagalin-Regular";
+    src: local("Gagalin-Regular"), url("./fonts/Gagalin-Regular.ttf") format("truetype");
+}
+
+/* hero */
+h1 {
+    /* font-family: 'Pacifico', cursive; */
+    font-family: "Gagalin-Regular";
+    line-height: 1.5 !important;
+}
